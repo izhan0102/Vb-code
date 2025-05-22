@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neon Tic Tac Toe</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="stars-container"></div>
+    <div class="game-container">
+        <div class="game-section">
+            <h1>Neon Tic Tac Toe</h1>
+            <div id="status">Player X's turn</div>
+            <div id="countdown"></div>
+            <div class="game-board">
+                <div class="cell" data-index="0"></div>
+                <div class="cell" data-index="1"></div>
+                <div class="cell" data-index="2"></div>
+                <div class="cell" data-index="3"></div>
+                <div class="cell" data-index="4"></div>
+                <div class="cell" data-index="5"></div>
+                <div class="cell" data-index="6"></div>
+                <div class="cell" data-index="7"></div>
+                <div class="cell" data-index="8"></div>
+            </div>
+            <button id="reset-btn">Reset Game</button>
+        </div>
+        
+        <div class="score-section">
+            <div class="score-container">
+                <h2>Match History</h2>
+                <table class="score-table">
+                    <thead>
+                        <tr>
+                            <th>Player</th>
+                            <th>Wins</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="player-x">Player X</td>
+                            <td id="score-x">0</td>
+                        </tr>
+                        <tr>
+                            <td class="player-o">Player O</td>
+                            <td id="score-o">0</td>
+                        </tr>
+                        <tr>
+                            <td>Draws</td>
+                            <td id="score-draw">0</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <button id="reset-score-btn">Reset Score</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
